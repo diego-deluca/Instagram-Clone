@@ -1,0 +1,129 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 55px;
+  background-color: white;
+  border-bottom: 1px solid rgb(228, 228, 228);
+  z-index: 500;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.02);
+}
+.navigation-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 53px;
+}
+.left {
+  display: flex;
+
+  width: 350px;
+  margin-left: 15px;
+  align-items: center;
+}
+.instagram-logo {
+  width: 106px;
+  cursor: pointer;
+}
+.mid {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgb(240, 240, 240);
+  border: none;
+  width: 300px;
+  transition: all 0.25s;
+}
+.search-icon {
+  height: 15.4px;
+  position: absolute;
+  left: 10px;
+  cursor: text;
+}
+.close-icon {
+  display: none;
+  height: 15px;
+  position: absolute;
+  right: 13px;
+  cursor: pointer;
+}
+
+.search-bar {
+  height: 34px;
+  border: none;
+  font-size: 15px;
+  background-color: rgb(240, 240, 240);
+  padding-left: 35px;
+  color: rgb(165, 165, 165);
+}
+
+.search-bar::placeholder {
+  color: rgb(165, 165, 165);
+  font-weight: lighter;
+}
+
+.search-bar:focus {
+  outline: none;
+  padding-left: 15px;
+}
+.search-bar:focus ~ .search-icon {
+  display: none;
+}
+.search-bar:focus ~ .close-icon {
+  display: flex;
+}
+.right-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 380px;
+}
+.right {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  position: relative;
+  width: 278px;
+  flex-shrink: 0;
+  padding-right: 12px;
+  padding-left: 15px;
+}
+.right img {
+  display: flex;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+}
+.message-icon-container {
+  position: relative;
+}
+.notification-number {
+  position: absolute;
+  top: -8px;
+  right: -9px;
+  background-color: red;
+  color: white;
+  font-size: 10.2px;
+  border-radius: 12px;
+  padding: 2px 6.5px;
+}
+.profile-picture {
+  height: 30px;
+  border-radius: 15px;
+}
+@media (max-width: 641px) {
+  .mid {
+    display: none;
+  }
+  .navigation-top {
+    justify-content: space-between;
+  }
+}

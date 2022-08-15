@@ -1,0 +1,13 @@
+body {
+  height: 5000px;
+  font-family: noto sans, arial, Helvetica, sans-serif;
+  line-height: 14px;
+  background-color: rgb(252, 252, 252);
+}
+.main-section {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: center;
+  margin: 82px 0px;
+}
